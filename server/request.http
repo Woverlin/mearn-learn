@@ -1,0 +1,54 @@
+POST http://localhost:5000/api/auth/register
+content-type: application/json
+
+{
+    "username":"hieu4",
+    "password":"hieu123"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+content-type: application/json
+
+{
+    "username":"hieu4",
+    "password":"hieu123"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+content-type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDY5NzMxODAyOWEwZjA5ZWFiNzg5MWIiLCJpYXQiOjE2MTc1MjM4NDN9.xe30AsRSGjq5UgAKjLRwdZWgxVxpLA-p67WqjP7OkXY
+
+{
+   "title":"aaaaa hieu4",
+    "description":"abcc",
+    "url":"google.com"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+content-type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDY5NzMxODAyOWEwZjA5ZWFiNzg5MWIiLCJpYXQiOjE2MTc1MjM3MDR9.XbJWNdh_Vzw7v-H7ftYvbmYP_BPVmOsd4azONEKBRDo
+
+
+###
+
+PUT http://localhost:5000/api/posts/606974cef2f93b0a2bba09de
+content-type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDY5NzMxODAyOWEwZjA5ZWFiNzg5MWIiLCJpYXQiOjE2MTc1MjM3MDR9.XbJWNdh_Vzw7v-H7ftYvbmYP_BPVmOsd4azONEKBRDo
+
+{
+    "title":"React js",
+    "description":"new learn",
+    "url":"reactjs.com",
+    "status":"LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/606974453204c10a128eb6c3
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDY5NzMxODAyOWEwZjA5ZWFiNzg5MWIiLCJpYXQiOjE2MTc1MjM3MDR9.XbJWNdh_Vzw7v-H7ftYvbmYP_BPVmOsd4azONEKBRDo
